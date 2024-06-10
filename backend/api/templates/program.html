@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- GAMBAR -->
+    <section class="page-image">
+        <img src="{% static 'img/program/' %}{{ id }}.jpg" class="card-img-top" alt="{{nama_program}}">
+    </section>
+    <!-- END GAMBAR -->
+
+    <!-- NAMA PROGRAM -->
+    <section class="page-nama">
+        <div class="container">
+            <div class="row gy-4">
+                <h1>{{ nama_program }}</h1>
+                <h6 class="page-update">Diperbarui: {{last_update}}</h6>
+                <h6 class="tweet-count">Jumlah tweet terkumpul: {{total_positive}}</h6>
+            </div>
+        </div>
+    </section>
+    <!-- END NAMA PROGRAM -->
+
+    <!-- SENTIMEN POSITIF -->
+    <section class="page-sentimen">
+        <div class="container">
+            <div class="row gy-4">
+                <h2 class="judul-sentimen">Hal Positif</h2>
+                <p>{{summary_positive}}</p>
+            </div>
+        </div>            
+    </section>
+    <!-- END SENTIMEN POSITIF -->
+                
+                
+    <!-- SENTIMEN NEGATIF -->
+    <section class="page-sentimen">
+        <div class="container">
+            <div class="row gy-4">
+                <h2 class="judul-sentimen">Hal Negatif</h2>
+                <p>{{summary_negative}}</p>
+            </div>
+        </div>
+    </section>
+    <!-- END SENTIMEN NEGATIF -->
+{% endblock %}

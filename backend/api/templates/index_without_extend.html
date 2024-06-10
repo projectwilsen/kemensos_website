@@ -1,0 +1,270 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Kemensos</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{% static 'img/logo-kemensos.png' %}" rel="icon" />
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'> 
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet" />
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+
+
+    <!-- =======================================================
+  * Template Name: Impact
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Updated: Apr 4 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="{% static 'img/logo-kemensos.png' %}" alt="" />
+        </a>
+
+        <!-- START NAVBAR -->
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Program Populer</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="{% url 'pkh' %}">Program Keluarga Harapan (PKH)</a></li>
+                <li><a href="{% url 'bpnt' %}">Bantuan Pangan Non-Tunai (BPNT)</a></li>
+                <li><a href="{% url 'bansos' %}">Bantuan Sosial (Bansos)</a></li>
+                <li><a href="{% url 'blt' %}">⁠Bantuan Langsung Tunai (BLT) Dana Desa</a></li>
+                <li><a href="{% url 'kip' %}">⁠Program Kartu Indonesia Pintar (KIP)</a></li>
+                <li><a href="{% url 'kis' %}">⁠Program Kartu Indonesia Sehat (KIS)</a></li>
+                <li><a href="{% url 'rastra' %}">⁠Bantuan Sosial Beras Sejahtera (Rastra)</a></li>
+                <li><a href="{% url 'raskin' %}">⁠Beras untuk Keluarga Miskin (RasKIN)</a></li>
+                <li><a href="{% url 'kube' %}">⁠Kelompok Usaha Bersama (KUBE)</a></li>
+                <li><a href="{% url 'sembako' %}">⁠Program Sembako</a></li>
+                <li><a href="{% url 'rehabilitasi' %}">⁠Rehabilitasi Sosial</a></li>
+                <li><a href="{% url 'kat' %}">⁠Program Komunitas Adat Terpencil (KAT)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- .navbar -->
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- KATA MASYARAKAT -->
+      <section class="kata">
+        <div class="container">
+          <div class="row gy-4">
+            <h1>Kata Masyarakat</h1>
+            <h6 class="main-update">Diperbarui: xx/xx/xxxx</h6>
+          </div>
+        </div>
+      </section>
+      <!-- END KATA MASYARAKAT -->
+
+
+      <!-- CAROUSEL -->
+      <section class="carousel">
+          <div id="cCarousel">
+            <div class="arrow" id="prev">
+              <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="arrow" id="next">
+              <i class="fa fa-chevron-right"></i>
+            </div>
+  
+            <div id="carousel-vp">
+              <div id="cCarousel-inner">
+                <a href="program-pkh.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-pkh.jpeg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">PKH</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-bpnt.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-bnpt.jpeg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">BPNT</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-bansos.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-bansos.jpg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Bansos</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-blt.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-blt.jpg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">BLT</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-kip.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-kip.jpg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">KIP</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-kis.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-kis.jpg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">KIS</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-rastra.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-rastra.jpg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Rastra</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-raskin.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-raskin.jpg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Raskin</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-kube.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-kube.jpeg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">KUBE</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-sembako.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-sembako.jpeg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Sembako</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-rehabilitasi.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-rehabilitasi.jpg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Rehabilitasi Sosial</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="program-kat.html">
+                  <div class="card cCarousel-item">
+                    <img src="{% static 'img/program/gambar-kube.jpeg' %}" 
+                    class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">KAT</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- END CAROUSEL -->
+
+      <!-- BANTUAN -->
+      <section class="bantuan">
+        <div class="container">
+          <div class="row gy-4">
+            <h1>Perlu Bantuan</h1>
+          </div>
+          <div class="row gy-4">
+            <p>
+              ini table Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis corrupti inventore voluptatibus recusandae. Deleniti impedit sed magni minus alias itaque officiis possimus veritatis fuga, ullam veniam quasi,
+              reprehenderit corporis praesentium!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END BANTUAN -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container mt-4">
+        <div class="copyright">
+          &copy; Copyright ML 2024</strong
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
+

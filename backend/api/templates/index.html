@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<!-- KATA MASYARAKAT -->
+<section class="kata">
+  <div class="container">
+    <div class="row gy-4">
+      <h1>Kata Masyarakat</h1>
+      <!-- <h6 class="main-update">Diperbarui: {{ update_date }}</h6> -->
+    </div>
+  </div>
+</section>
+<!-- END KATA MASYARAKAT -->
+
+<!-- CAROUSEL -->
+<section class="carousel">
+  <div id="cCarousel">
+    <div class="arrow" id="prev">
+      <i class="fa fa-chevron-left"></i>
+    </div>
+    <div class="arrow" id="next">
+      <i class="fa fa-chevron-right"></i>
+    </div>
+
+    <div id="carousel-vp">
+      <div id="cCarousel-inner">
+        <a href="{% url 'pkh' %}">
+          <div class="card cCarousel-item">
+            <img src="{% static 'img/program/gambar-pkh.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">PKH</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'bpnt' %}">
+          <div class="card cCarousel-item">
+            <img src="{% static 'img/program/2.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">BPNT</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'bansos' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-bansos.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/3.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Bansos</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'blt' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-blt.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/4.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">BLT</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'kip' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-kip.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/5.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">KIP</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'kis' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-kis.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/6.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">KIS</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'rastra' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-rastra.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/7.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Rastra</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'raskin' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-raskin.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/8.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Raskin</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'kube' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-kube.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/9.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">KUBE</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'sembako' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-sembako.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/10.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Sembako</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'rehabilitasi' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-rehabilitasi.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/11.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Rehabilitasi Sosial</h3>
+            </div>
+          </div>
+        </a>
+        <a href="{% url 'kat' %}">
+          <div class="card cCarousel-item">
+            <!-- <img src="{% static 'img/program/gambar-kat.jpg' %}" class="card-img-top" alt="..."> -->
+            <img src="{% static 'img/program/12.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">KAT</h3>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END CAROUSEL -->
+
+<!-- BANTUAN -->
+<section class="bantuan">
+    <div class="container">
+        <div class="row gy-4">
+            <h1>Perlu Bantuan</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Jenis Bencana</th>
+                        <th>Lokasi</th>
+                        <th>Hari</th>
+                        <th>Tanggal</th>
+                        <th>Jam</th>
+                        <th>Estimasi Masyarakat Terdampak</th>
+                        <th>Sumber</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in data %}
+                    <tr>
+                        <td>{{ item.jenis_bencana }}</td>
+                        <td>{{ item.lokasi }}</td>
+                        <td>{{ item.hari }}</td>
+                        <td>{{ item.tanggal }}</td>
+                        <td>{{ item.jam }}</td>
+                        <td>{{ item.estimasi_masyarakat_terdampak }}</td>
+                        <td><a href="{{ item.url }}" target="_blank">{{ item.sumber }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="bantuan">
+  <div class="container">
+    <div class="row gy-4">
+      <h1>Perlu Bantuan</h1>
+    </div>
+    <div class="row gy-4">
+      <p>
+        Ini table Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis corrupti inventore voluptatibus recusandae. Deleniti impedit sed magni minus alias itaque officiis possimus veritatis fuga, ullam veniam quasi, reprehenderit corporis praesentium!
+      </p>
+    </div>
+  </div>
+</section> -->
+<!-- END BANTUAN -->
+{% endblock %}
