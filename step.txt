@@ -1,3 +1,5 @@
+1. Create Dockerfile
+
 FROM python:3.9-alpine
 
 ENV PYTHONUNBUFFERED 1
@@ -14,3 +16,20 @@ COPY . /app/backend/
 EXPOSE 8000
 
 CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000" ]
+
+2. Create docker-compose.yml in the root directory
+
+version: '3.9'
+
+services:
+
+  backend: 
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+
+    ports:
+      - '8000:8000'
+
+    volumes:
+      - ./backend:/app/backend
